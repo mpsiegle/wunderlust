@@ -5,6 +5,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url('https://fonts.googleapis.com/css2?family=Molle&family=Montserrat&display=swap');
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -50,3 +51,281 @@ table {
 	border-spacing: 0;
 }
 
+:root{
+	--yellow: #F6D64A;
+	--teal: #55BCD5;
+	--purple: #9B26B0;
+	--blue: #499BD2;
+	--dark-gray: #222222;
+	--light-gray: #EAEAEA;
+	--white: #FFFFFF;
+	--black: #000000;
+}
+
+h1, h2, h3{
+	font-family: "Molle", sans-serif;
+}
+
+h4, p, q, small, nav, button, form{
+	font-family: "Montserrat", sans-serif;
+}
+
+nav h2{
+	visibility: hidden;
+}
+
+#skip{
+	position:absolute;
+	left:-10000px;
+	top:auto;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+
+header{
+	background-image: linear-gradient(var(--teal), var(--white));
+}
+
+body{
+	overflow-x: hidden
+}
+
+#menu-toggle{
+	display: flex;
+	flex-direction: column;
+	width: max-content;
+	z-index: 2;
+	cursor: pointer;
+	background-color: var(--yellow);
+}
+
+
+#menu-toggle input{
+	appearance: none;
+	padding: 0;
+	margin: 0;
+}
+
+	
+h1{
+	font-size: 50px;
+	position: relative;
+	left: 45px;
+}
+
+header p{
+	position: absolute;
+	right: 100px;
+	width: 300px;
+	padding: 10px;
+	font-size: 20px;
+}
+
+#menu-toggle{
+	position: relative;
+	left: 300px;
+	bottom: 150px;
+}
+
+#main-content h2{
+	font-size: 45px;
+	margin-left: 45px;
+}
+
+#main-content p{
+	margin-left: 45px;
+	margin-right: 45px;
+	line-height: 1.8;
+}
+
+#img-grid img{
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+#plan{
+	background-color: var(--yellow);
+	padding-top: 30px;
+}
+
+#plan h3{
+	margin-left: 10px;
+	font-size: 35px;
+	padding: 40px;
+}
+
+#plan div{
+	margin-left: 50px;
+}
+
+#plan img{
+	background-color: var(--teal);
+	padding: 80px;
+	border: solid 5px var(--white);
+	border-radius: 5%;
+	max-width: 200px;
+	min-width: 200px;
+	max-height: 200px;
+	min-height: 200px;
+}
+
+#plan h4{
+	font-weight: bold;
+	text-align: center;
+	font-size: 30px;
+	position: relative;
+	top: 50px;
+	right: 25px;
+}
+
+#testimonials{
+	padding-top: 50px;
+}
+
+#testimonials h3{
+	font-size: 45px;
+	position: relative;
+	left: 45px;
+	padding-bottom: 10px;
+}
+
+#testimonials section{
+	text-align: center;
+	margin-right: 100px;
+	margin-left: 100px;
+}
+
+#testimonials h4{
+	font-weight: bold;
+	font-size: 30px;
+}
+
+#testimonials img{
+	padding-bottom: 8px;
+	padding-top: 8px;
+}
+
+#about{
+	background-color: var(--blue);
+}
+
+#about h3{
+	margin-left: 10px;
+	font-size: 35px;
+	padding: 40px;
+}
+
+#about div{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+	justify-content: center;
+	padding-left: 80px;
+	padding-right: 50px;
+	margin-right: 30px;
+}
+
+
+#about h4{
+	font-weight: bold;
+	position: relative;
+	padding: 5px;
+	text-align: center;
+}
+
+#about p{
+	position: relative;
+	text-align: center;
+}
+
+#contact h3{
+	margin-left: 10px;
+	font-size: 35px;
+	padding: 40px;
+}
+
+#contact .form-required{
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+}
+
+form{
+	width: 350px;
+	margin: 10px auto;
+	padding: 16px;
+	border-radius: 4px;
+}
+
+input, label, select, textarea{
+	display: block;
+	width: 100%;
+}
+
+label{
+	margin: 0 0 4px 16px;
+	font-weight: bold;
+}
+
+input, select, textarea{
+	padding: 10px;
+	font-size: 1rem;
+	margin-bottom: 24px;
+	border-radius: 4px;
+	border: 3px solid var(--purple);
+	background-color: var(--white);
+}
+
+fieldset{
+	display: block;
+	margin: 1rem auto;
+	padding: 4px;
+}
+
+fieldset label{
+	font-size: 2rem;
+	line-height: 1.1;
+	display: grid;
+	grid-template-columns: 1em auto;
+	gap: 0.5em;
+}
+
+input[type="radio"] {
+	appearance: none;
+	width: 20px;
+	height: 20px;
+	border: 2px solid black;
+	border-radius: 50%;
+	outline: none;
+	cursor: pointer;
+}
+
+input[type=radio]:checked {
+	background-color: purple;
+}
+
+#mySubmit{
+	background-color: var(--purple);
+	color: var(--white);
+	cursor: pointer;
+}
+
+footer{
+	background-color: var(--light-gray);
+	text-align: center;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	font-size: 20px;
+	padding: 10px;
+	line-height: 3;
+}
+
+footer a{
+	text-decoration: none;
+}
+
+footer a:visited{
+	text-decoration: none;
+	color: var(--dark-gray);
+}
