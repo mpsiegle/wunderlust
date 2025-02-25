@@ -107,8 +107,13 @@ header label{
 }
 
 ul{
-	position: relative;
-	right: 50px;
+	visibility: hidden;
+	
+}
+
+header a{
+	text-decoration: none;
+	color: var(--dark-gray)
 }
 
 #menu-toggle input{
@@ -244,6 +249,10 @@ header p{
 	text-align: center;
 }
 
+#about section:nth-child(3){
+	text-align: center;
+}
+
 #about p{
 	position: relative;
 	text-align: center;
@@ -353,10 +362,11 @@ footer a:visited{
 	ul{
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
-		grid-gap: 50px;
+		gap: 20px;
 		position: relative;
 		top: 80px;
-		right: 225px;
+		right: 300px;
+		visibility: visible;
 	
 	}
 
@@ -496,8 +506,8 @@ footer a:visited{
 @media screen and (min-width: 1000px){
 	nav{
 		position: relative;
-		bottom: 230px;
-		left: 900px;
+		bottom: 250px;
+		left: 950px;
 	}
 
 	ul{
