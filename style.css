@@ -94,7 +94,6 @@ body{
 #menu-toggle{
 	display: flex;
 	flex-direction: column;
-	width: max-content;
 	z-index: 2;
 	cursor: pointer;
 }
@@ -483,7 +482,85 @@ footer a:visited{
 }
 
 @media screen and (min-width: 1000px){
-	body{
-		color: red;
+	nav{
+		position: relative;
+		bottom: 230px;
+		left: 900px;
+	}
+
+	ul{
+		width: 50%;
+		gap: 10px;
+	}
+
+	header p{
+		bottom: 80px;
+		font-size: 25px;
+		max-width: 1000px;
+	}
+
+	header img{
+		width: 350px;
+		height: auto;
+		position: relative;
+		bottom: 30px;
+		right: 50px;
+	}
+
+	h1{
+		bottom: 100px;
+	}
+	
+	#intro{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		margin: 75px;
+	}
+
+	#intro h2{
+		grid-column-start: 1;
+		grid-column-end: -1;
+	}
+
+	#intro p{
+		font-size: 25px;
+		padding-top: 50px;
+	}
+
+	#plan div{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		padding-bottom: 75px;
+	}
+
+	#testimonials div{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		padding-bottom: 75px;
+	}
+
+	#about div{
+		padding: 50px;
+		padding-right: 200px;
+		padding-left: 200px;
+	}
+
+	form{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		gap: 100px;
+	}
+
+	#mySubmit{
+		position: relative;
+		left: 150px;
+		width: 65%;
+		height: 20%;
+	}
+
+	footer{
+		display: grid;
+		grid-template-columns: 3fr .5fr .5fr;
+		text-align: left;
 	}
 }
