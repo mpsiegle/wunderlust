@@ -97,7 +97,6 @@ body{
 	width: max-content;
 	z-index: 2;
 	cursor: pointer;
-	background-color: var(--yellow);
 }
 
 
@@ -328,4 +327,163 @@ footer a{
 footer a:visited{
 	text-decoration: none;
 	color: var(--dark-gray);
+}
+
+@media screen and (min-width: 700px) {
+
+	#toggle{
+		visibility: hidden;
+	}
+
+	header label{
+		visibility: hidden;
+	}
+
+	ul{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-gap: 50px;
+		position: relative;
+		top: 80px;
+		right: 225px;
+	
+	}
+
+	li{
+		display: block;
+		background-color: var(--white);
+		color: var(--black);
+		text-decoration: none;
+		padding: 20px;
+		text-align: center;
+		font-weight: bold;
+	}
+
+	li:hover{
+		background-color: var(--yellow);
+	}
+
+	a{
+		text-decoration: none;
+	}
+
+	a:visited{
+		color: var(--black);
+	}
+
+	h1{
+		position: relative;
+		left: 250px;
+		bottom: 75px;
+	}
+
+	header p{
+		position: relative;
+		margin: 0;
+		left: 250px;
+		bottom: 60px;
+		width: auto;
+		max-width: 500px;
+	}
+
+	#logo{
+		position: relative;
+		top: 50px;
+	}
+
+	#intro{
+		margin: 45px;
+	}
+
+	#intro p{
+		margin: 0;
+	}
+
+	#intro h2{
+		margin: 0;
+	}
+	
+	#img-grid{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+	}
+
+	#img-grid picture{
+		grid-column-start: 1;
+		grid-column-end: -1;
+	}
+
+	#plan div{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		padding-bottom: 20px;
+	}
+
+	#plan h3{
+		font-size: 45px;
+	}
+
+	#testimonials div{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		padding-bottom: 20px;
+	}
+
+	#testimonials img{
+		width: 200px;
+		height: 200px;
+		padding-top: 50px;
+	}
+
+	#about div{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 5px;
+	}
+
+	#about img{
+		width: auto;
+		height: auto;
+		margin: 10px;
+	}
+
+	#contact h3{
+		font-size: 45px;
+		position: relative;
+		top: 35px;
+		left: 40px;
+	}
+
+	#contact form{
+		width: 80%;
+	}
+
+	fieldset{
+		display: flex;
+		flex-direction: row;
+		padding: 10px;
+	}
+
+	#mySubmit{
+		width: 40%;
+		height: 80px;
+		font-size: 30px;
+		position: relative;
+		left: 450px;
+		top: 25px;
+	}
+
+	footer{
+		display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+	}
+
+	
+}
+
+@media screen and (min-width: 1000px){
+	body{
+		color: red;
+	}
 }
